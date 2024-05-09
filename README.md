@@ -35,7 +35,7 @@ This Scala project implements a rule engine for a retail store to qualify orders
 2. Type Discount: Provides discounts for specific product types (Cheese, Wine).<br>
 3. Date Discount: Special discounts for orders made on specific dates.<br>
 4. Quantity Discount: Discounts based on the quantity of products purchased.<br>
-5. App Discount: Encourages app usage with discounts based on the quantity rounded up to the nearest multiple of 5.<br>
+5. App Discount:Encourages app usage with discounts based on the quantity rounded up to the nearest multiple of 5.<br>
 6. Visa Discount: Promotes Visa card usage with a minor discount.<br>
 
 <h2>Logging</h2>
