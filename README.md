@@ -1,4 +1,4 @@
-#Discount Rule Engine#
+<h1>Discount Rule Engine</h1>
 <h1>Overview</h1>
 This Scala project implements a rule engine for a retail store to qualify orders' transactions for discounts based on various rules. The engine automatically calculates the proper discount based on predefined calculation rules and logs events during the processing. The final processed data is loaded into a PostgreSQL database.
 
