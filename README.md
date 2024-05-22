@@ -36,8 +36,9 @@ A huge retail store wants a rule engine that qualifies orders’ transactions to
 The project consists of the following components:
 
 - **Main Scala File**: `DiscountQualificationCalculation.scala` contains the main logic for reading, processing, and generating output for orders.
-- **Input Data**: The input data is stored in a CSV file located at `src/main/scala/Sources/TRX1000.csv`.
-- **Output Data**: The processed output is saved in a CSV file located at `src/main/scala/Output/Processed_TRX1000.csv`.
+- **Input Data**: The input data is stored in a CSV file located at the path specified in the `.env` file.
+- **Output Data**: The processed output is saved in a CSV file at the path specified in the `.env` file.
+- **Database Connection**: The connection parameters for the database are stored in the `.env` file.
 - **Logger Configuration**: Log4j configuration is included in the project to handle logging.
 
 ## Dependencies
@@ -50,7 +51,14 @@ To run the project, follow these steps:
 1. Ensure you have Scala and SBT installed on your system.
 2. Clone the repository to your local machine.
 3. Navigate to the project directory.
-4. Update the input CSV file if needed (`src/main/scala/Sources/TRX1000.csv`).
+4. Create a `.env` file with the necessary paths and connection parameters:
+    ```
+    INPUT_CSV_PATH=src/main/scala/Sources/TRX1000.csv
+    OUTPUT_CSV_PATH=src/main/scala/Output/Processed_TRX1000.csv
+    DB_URL=your_database_url
+    DB_USER=your_database_username
+    DB_PASSWORD=your_database_password
+    ```
 5. Run the project using SBT:
     ```bash
     sbt run
